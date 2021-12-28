@@ -6,19 +6,48 @@
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <title>Flag Of Bangladesh</title>
     <style>
-        *{
+       *{
     margin: auto;
 }
         body{
             background-color: #e0e0e0;
 }
+#heading{
+    text-align: center;
+    border: 2px solid rgb(35, 97, 66);
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    animation-name: flag-animate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes flag-animate{
+    0%{
+        top: 10px;
+        background-color: black;
+        color: blanchedalmond;
+    }
+    50%{
+        top: 60px;
+        background-color: burlywood;
+        color: cyan;
+    }
+    100%{
+        top: 10px;
+        background-color: cyan;
+        color: darkgoldenrod;
+    }
+}
 .outline{
     width: 500px;
     height: 300px;
-    background-color: green;
+    background-color: rgba(30, 90, 30, 0.65);
     position: relative;
-    top: 250px;
-    left: 200px;
+    top: 150px;
+    left: px;
 
 }
 .circle{
@@ -50,11 +79,43 @@
     height: 200px;
     width: 200px;
 }
+.alert{
+    width: auto;
+    height: 50px;
+    background-color: darkgoldenrod;
+    position: relative;
+    top: 370px;
+    margin-bottom: 0px;
+}
+#facebook{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 800px;
+}
+#instagram{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 900px;
+}
+#github{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 1000px;
+}
+.copyright{
+    position: absolute;
+    top: 5px;
+    left: 600px;
+    font-size: 30px;
+}
 
     </style>
 </head>
 <body>
-    <h2>Flag Of Bangladesh</h2>
+    <h2 id="heading">Flag Of Bangladesh</h2>
     <div class="outline">
         <div class="circle">        
             <div class="map">
@@ -86,7 +147,14 @@
 
     </div>
     <br><br><br><br>
-    <p>This Flag was made by <a href="https://www.facebook.com/sabbirshahebjada/">Md. Sabbir Hosen</a></p>
-        <p> view the code <a href="https://github.com/SabbirShaheb/flagofbangladesh/blob/main/index.html">hre</a></p>
+    <div class="alert">
+        <p class="copyright">Copyright:</p>
+        <a href="https://www.facebook.com/sabbirshahebjada/"><ion-icon name="logo-facebook" id="facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/iamsabbir03/"><ion-icon name="logo-instagram" id="instagram"></ion-icon></a>
+        <a href="https://github.com/SabbirShaheb"><ion-icon name="logo-github" id="github"></ion-icon></a>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
