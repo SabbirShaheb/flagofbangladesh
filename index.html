@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <title>Flag Of Bangladesh</title>
+    <script>alert("Alert: This is only Perfectly viewable on Big Screen")</script>
     <style>
        *{
     margin: auto;
@@ -87,30 +88,33 @@
     top: 370px;
     margin-bottom: 0px;
 }
+.alert-container ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding-right: 400px;
+}
+.alert-container ul li a{
+    width: 50px;
+    height: 50px;
+}
+
 #facebook{
     width: 40px;
     height: 50px;
-    position: absolute;
-    left: 800px;
 }
 #instagram{
     width: 40px;
     height: 50px;
-    position: absolute;
-    left: 900px;
 }
 #github{
     width: 40px;
     height: 50px;
     position: absolute;
-    left: 1000px;
 }
-.copyright{
-    position: absolute;
-    top: 5px;
-    left: 600px;
-    font-size: 30px;
-}
+
 
     </style>
 </head>
@@ -148,10 +152,14 @@
     </div>
     <br><br><br><br>
     <div class="alert">
-        <p class="copyright">Copyright:</p>
-        <a href="https://www.facebook.com/sabbirshahebjada/"><ion-icon name="logo-facebook" id="facebook"></ion-icon></a>
-        <a href="https://www.instagram.com/iamsabbir03/"><ion-icon name="logo-instagram" id="instagram"></ion-icon></a>
-        <a href="https://github.com/SabbirShaheb"><ion-icon name="logo-github" id="github"></ion-icon></a>
+        <div class="alert-container">
+            <ul>
+                <li><a href="https://github.com/SabbirShaheb"><ion-icon name="logo-github" id="github"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/sabbirshahebjada/"><ion-icon name="logo-facebook" id="facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/iamsabbir03/"><ion-icon name="logo-instagram" id="instagram"></ion-icon></a></li>
+                
+            </ul>
+        </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
